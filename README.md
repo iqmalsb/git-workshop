@@ -83,15 +83,26 @@ List, create, or delete branches. This is particularly useful if you are plannin
 Command:
 `git branch [OPTIONS]`
 ### git checkout
-Switch branches or restore working tree files.
+Switch branches or restore working tree files. Depending on your workflow, you are required to not mix your tasks under a single branch especially if you are involved in multiple features or modules.
 
 Command:
 `git checkout [OPTIONS]`
 ## Advanced Git Commands
 ### git merge
-### git rebase
-### git stash
+Join two or more development histories together. This command is particularly common in applying the changes of a code from a branch (i.e. feature-branch) into another branch (i.e. production-branch).
 
+Command:
+`git merge [OPTIONS]`
+### git rebase
+Reapply commits on top of another base tip. This command makes your branch more streamlined (cleaner flow). However this is a very subjective opinion and should be used with the consensus of your team or organisation.
+
+Command:
+`git rebase [OPTIONS]`
+### git stash
+Stash the changes in a dirty working directory away. This command is very powerful and useful as to preserve changes without having to commit it (think of it like saving a draft before publishing).
+
+Command:
+`git stash [COMMNAD] [OPTIONS]`
 ## References
 1. Official Git website | [https://git-scm.com/](https://git-scm.com/)
 2. Git and GitHub for Beginners - Crash Course | [https://youtu.be/RGOj5yH7evk?si=dh6Mno4YeG6zzfQj](https://youtu.be/RGOj5yH7evk?si=dh6Mno4YeG6zzfQj)
