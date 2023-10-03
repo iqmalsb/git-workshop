@@ -1,7 +1,7 @@
 # Git - Workshop
 
 ## Introduction
-This repo serves as a guideline for introducing how git works for beginners. Feel free to use this however you want to. All credit goes to the original authors (see [References](#references) below).
+This repo serves as a guideline for introducing how git works for beginners. Feel free to use this however you want to. All credit goes to the original authors (see [References](#references) below). In this guide, there will be several terms used to convey meaning for an instruction or definition.
 
 ## Content
 1. [Version Control & Git](#version-control--git)
@@ -23,7 +23,7 @@ This repo serves as a guideline for introducing how git works for beginners. Fee
 5. [References](#references)
 
 ## Version Control & Git
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Version control is a practice of software code management. One can view it as a perspective of accounting in finance. Every bit of transaction is somehow being recorded (i.e. amount and date). In software development, version control is the accounting practice. Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ## Preparation / Installation
 To use git, you would have to install it on your local machine.
@@ -46,13 +46,47 @@ Clones a repository into a new directory.
 Command:
 `git clone [PATH]`
 ### git status
-### git fetch / git pull
-### git add (git stage)
-### git commit
-### git push
-### git branch
-### git checkout
+Show the working tree status. This command is typically paired with `git add` (executed after it) to see the changes in files before executing `git commit` ([See below](#git-commit))
 
+Command:
+`git status`
+### git fetch / git pull
+Download objects and refs from another repository
+
+Command:
+`git fetch`
+
+Fetch from and integrate with another repository or a local branch
+
+Command:
+`git pull`
+
+Difference between git fetch and git pull is primarily that git fetch only retrieves the information on what has been changed since (you can look at it like syncing device), whereas git pull retrieves the information and applies the changes on your local repo. 
+### git add (git stage)
+Add file contents to the index. The term 'stage' and its equivalent tenses usually refers to the same idea.
+
+Command:
+`git add [OPTIONS]`
+### git commit
+Record changes to the repository. This command will make the current branch that you are working on to have the latest 'entry'.
+
+Command:
+`git commit`
+### git push
+Update remote refs along with associated objects.
+
+Command:
+`git push [OPTIONS]`
+### git branch
+List, create, or delete branches. This is particularly useful if you are planning to make use of the Git branching strategies (Advanced topic, [see below](#references)).
+
+Command:
+`git branch [OPTIONS]`
+### git checkout
+Switch branches or restore working tree files.
+
+Command:
+`git checkout [OPTIONS]`
 ## Advanced Git Commands
 ### git merge
 ### git rebase
@@ -61,3 +95,4 @@ Command:
 ## References
 1. Official Git website | [https://git-scm.com/](https://git-scm.com/)
 2. Git and GitHub for Beginners - Crash Course | [https://youtu.be/RGOj5yH7evk?si=dh6Mno4YeG6zzfQj](https://youtu.be/RGOj5yH7evk?si=dh6Mno4YeG6zzfQj)
+3. Git Workflow - Atlassian Git Tutorial | [https://www.atlassian.com/git/tutorials/comparing-workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
